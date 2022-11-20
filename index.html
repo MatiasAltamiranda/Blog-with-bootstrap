@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Chef en casa</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5" href="./index.html"><img src="./img/logo_icon.png" alt="Logo" style="width:110px"></a>
+                <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end align-self-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link px-5 fs-2" href="./index.html"><i class="bi bi-caret-up"></i> Home <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5 fs-2" href="./login.html"><i class="bi bi-person-circle"></i> Ingresar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5 fs-2" href="#" data-bs-toggle="modal" data-bs-target="#subModal"><i class="bi bi-clipboard"></i> Suscribirse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5 fs-2" href="./contacto.html"><i class="bi bi-chat-right-text"></i> Contacto</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5 fs-2" href="./about_us.html"><i class="bi bi-info-circle"></i>
+                      Sobre Nosotros</a>
+                  </li>
+                </ul>
+             </div>
+            </div>
+        </nav>
+      </header>
+   
+      <main>    
+        <section class="hero mb-5">
+              <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active overlay"><img src="./img/portada1.jpg" alt="imagen_pizza"><div class="overlay_text"><a href="./404.html"><p>PIZZAS</p></a></div></div>
+                  <div class="carousel-item overlay"><img src="./img/portada2.jpg" alt="imagen_Carnes_Asadas"><div class="overlay_text"><a href="./404.html"><p>CARNES ASADAS</p></a></div></div>
+                  <div class="carousel-item overlay"><img src="./img/portada3.jpg" alt="imagen_Carnes_Horno"><div class="overlay_text"><a href="./404.html"><p>CARNES AL HORNO </p></a></div></div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon span-button"></span></button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next"><span class="carousel-control-next-icon span-button"></span></button>
+              </div>
+        </section>
+
+        <section class="top_entries">    
+            <div class="container">
+              <h2 class="main_title display-4 fw-bold text-center text-uppercase">Blogs mas visitados</h2>  
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card">
+                      <a class="text-decoration-none" href="./404.html">
+                        <img src="./img/vegetariano.jpg" class="card-img-top" alt="pastas"/>
+                        <div class="card-body">
+                          <h2 class="card-title">VEGANISMO</h2>
+                          <h3 class="card-text">
+                            Cada vez son más las personas que deciden prescindir de las
+                            carnes y pescados en su dieta o incluso de los huevos y
+                            lácteos para evitar consumir productos de origen animal por
+                            completo.
+                          </h3>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-6 text-center d-flex justify-content-center align-items-center">
+                    <img src="./img/iga.jpg" class="img-thumbnail" alt="iga" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card">
+                      <a class="text-decoration-none" href="./entries_pagina_libros.html">
+                          <img src="./img/libro.jpg" class="card-img-top" alt="asado" />
+                          <div class="card-body">
+                            <h2 class="card-title">LECTURA</h2>
+                            <h3 class="card-text">
+                              Con días más largos, se dan los tiempos para cocinar o al
+                              menos pensar en comidas más elaboradas. Aquí, una decena de
+                              ejemplares con infalibles recetas y mejores historias.
+                            </h3>
+                          </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-6 text-center d-flex justify-content-center align-items-center">
+                    <img src="./img/tesco.jpg" class="img-thumbnail" alt="tesco..." />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card">
+                      <a class="text-decoration-none" href="./entries_receta_flan.html">
+                          <img src="./img/flan.jpg" class="card-img-top" alt="tarta" />
+                          <div class="card-body">
+                            <h2 class="card-title">RECETAS</h2>
+                            <h3 class="card-text">
+                              Esta "tarta de la abuela" de flan y galletas la hemos
+                              aligerado un poco con galletas y chocolate sin azúcar, pero
+                              queda igualmente exquisita.
+                            </h3>
+                          </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-6 text-center d-flex justify-content-center align-items-center">
+                    <img
+                      src="./img/liliana.jpg"
+                      class="img-thumbnail"
+                      alt="hamburguesa"
+                    />
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="last_entries">
+            <div class="container mt-5">
+              <h2 class="main_title display-4 fw-bold text-center text-uppercase">Ultimas entradas</h2>  
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="card">
+                          <a class="text-decoration-none" href="./entries_italia.html">
+                            <img src="./img/pastas.jpg" class="card-img-top" alt="pastas" />
+                            <div class="card-body">
+                                <h2 class="card-title">COCINA ITALIANA</h2>
+                                <h3 class="card-text">
+                                     te contamos acerca de los 10 platos tradicionales de la cocina
+                                     italiana, en una recopilación apta para todos los gustos y que
+                                     te dará buenas ideas a la hora de cocinar.
+                                </h3>
+                            </div>
+                          </a>  
+                        </div>
+                    </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="card">
+                    <a class="text-decoration-none" href="./404.html"> 
+                        <img src="./img/curso_cocina.jpg" class="card-img-top" alt="curso de cocina"/>
+                            <div class="card-body">
+                                <h2 class="card-title">CURSOS Y CAPACITACIONES</h2>
+                                <h3 class="card-text">
+                                  Ya va siendo tiempo de aterrizar los propósitos de año nuevo y
+                                  uno de los más valiosos es aprender a cocinar sin morir en el
+                                  intento. Hay muchísima oferta de cursos en línea que te
+                                  recomendamos para que inicies el año con todo.
+                                </h3>
+                            </div>
+                     </a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="card">
+                    <a class="text-decoration-none" href="./entries_asado.html">
+                        <img src="./img/asado.jpg" class="card-img-top" alt="asado" />
+                        <div class="card-body">
+                          <h2 class="card-title">CONSEJOS</h2>
+                          <h3 class="card-text">
+                            Conocé las cosas que jamás debés hacer para aprender cómo
+                            hacer asado. Cómo elegir la carne, condimentos y más.
+                            Consejos, paso a paso y recetas para sorprender.
+                          </h3>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+                  <div class="card">
+                    <a class="text-decoration-none" href="./404.html">  
+                      <img
+                        src="./img/comida_oriental.jpg"
+                        class="card-img-top"
+                        alt="sushi"
+                      />
+                      <div class="card-body">
+                        <h2 class="card-title">RINCON ORIENTAL</h2>
+                        <h3 class="card-text">
+                          La gastronomía china es una de las más variadas, saludables y
+                          ricas del mundo, conoce cuáles son ingredientes de la cocina
+                          oriental más representativos.
+                        </h3>
+                      </div>
+                    </a>>  
+                  </div>
+                </div>
+               </div>
+            </div>
+
+        </section>
+
+        <section class="container_gallery">
+
+          <div id="gallery" class="container mb-5 mt-5">
+              <div class="text-center p-3">
+                  <h2 class="display-4 fw-bold main_title text-uppercase" >Galeria</h2>
+                  <p class="display-5 text-info mt-5">Las mejores recetas</p>
+              </div>  
+               <div class="row p-3 m-0">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-1" src="./img/1.jpg" alt="imagen_comida_1"></div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-2" src="./img/2.jpg" alt="imagen_comida_2"></div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-3" src="./img/3.jpg" alt="imagen_comida_3"></div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-4" src="./img/4.jpg" alt="imagen_comida_4"></div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-5" src="./img/5.jpg" alt="imagen_comida_5"></div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-6" src="./img/6.jpg" alt="imagen_comida_6"></div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-7" src="./img/7.jpg" alt="imagen_comida_7"></div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  mb-3 img-item overflow-hidden zoom"><img class="img-fluid rounded-3" data-bs-toggle="modal" data-bs-target="#description-8" src="./img/8.jpg" alt="imagen_comida_8"></div>
+              </div>
+          </div>
+          
+        </section>  
+        
+    </main>
+    
+    
+    <footer class="bg-primary footer">
+        <div class="container">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3 text-center">
+                        <img class="img-fluid" src="./img/logo_icon.png" alt="logo_chef_casa">
+                        <p class="fs-3 mb-4">El placer de cocinar</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3 text-center d-flex align-items-center justify-content-center ">
+                        <p class="h3 mb-4">Copyright © Todos los derechos reservados</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3 text-center mb-4 d-flex align-items-center justify-content-center">
+                        <a class="text-info zoom" href="#"><i class="bi bi-facebook me-5 h1"></i></a>
+                        <a class="text-info" href="#"><i class="bi bi-instagram me-5 h1"></i></a>
+                        <a class="text-info" href="#"><i class="bi bi-envelope h1"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <section class="modal-gallery">
+        <div id="description-1" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Fideo con tuco</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="description-2" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Lasagna</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="description-3" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Revuelto verduras</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="description-4" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Pollo con guarnicion</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="description-5" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Bistec con papas</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="description-6" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Camaron acompañado</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="description-7" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Asado</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="description-8" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Milanesas con papas fritas</h4>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-main">
+                        <p class="fs-4 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quo. Fugiat magni facilis, nulla reiciendis, quam unde odio quidem perferendis illum sapiente et eligendi repudiandae voluptate sit eos eveniet perspiciatis?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn bg-primary fs-4">Cerrar</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section> 
+
+    
+    <section class="modal-subs">
+      <div class="modal fade" id="subModal" data-bs-backdrop="static" tabindex="-1"aria-labelledby="subModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div id="subModal" class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3 fw-bold" id="subModalLabel">Suscribirse</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="pe-5 ps-5">
+                <div>
+                  <input class="form-control fs-5 mb-4" id="name" type="text" minlength="2" maxlength="30" name="name" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div>
+                  <input class="form-control fs-5" id="email" type="email" minlength="6" maxlength="45" placeholder="Email" name="Ingresa tu correo electronico" required></div>
+                <div>
+                  <input class="form-control fs-5 mt-4" id="Edad" type="number" placeholder="Ingresa tu edad" name="age" required>
+                </div>
+                <div>
+                  <input class="item" id="Tyc" type="checkbox" name="tyc" required> <label class="fs-5" for="Tyc">Terminos y condiciones</label>
+                </div>
+                <div>
+                  <input class="item" id="novedades" type="checkbox" name="novedades"> <label class="fs-5" for="novedades">Recibir novedades por email</label>
+                </div>
+                <div class="modal-footer">
+                  <button id="red" type="button" class="btn btn-danger fs-5" data-bs-dismiss="modal">Cancelar</button>
+                  <button id="green" type="submit" class="btn btn-success fs-5">Enviar</button>
+                </div>
+              </form>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
